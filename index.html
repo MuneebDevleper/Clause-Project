@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clause</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <img src="./photos/logo.png" alt="">
+                    <h2>Clause</h2>
+                </div>
+                <div class="inner-menu">
+                    <select name="Solutions" id="">
+                        <option value="">Solutions</option>
+                    </select>
+                    <select name="Solutions" id="">
+                        <option value="">Customers</option>
+                    </select>
+                    <a href="">Pricing</a>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="login">Login</button>
+                <button id="now">Start Now</button>
+            </div>
+            <div class="bar"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+
+    <script>
+        let btn = document.querySelector(".bar");
+        let x = document.querySelector(".inner-menu");
+        let y = document.querySelector("#login");
+        let z = document.querySelector("#now");
+        let openMenu = false;
+
+        btn.addEventListener('click', () => {
+            if (openMenu == false) {
+                x.style.display = 'block';
+                y.style.display = 'block';
+                z.style.display = 'block';
+                openMenu = true;
+            } else if (openMenu == true) {
+                x.style.display = 'none';
+                y.style.display = 'none';
+                z.style.display = 'none';
+                openMenu = false;
+            }
+
+        });
+    </script>
+
+
+
+    <!-- HERO-SECTION -->
+
+
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="inner-1st">
+                <div id="log"><img src="./photos/girl-1st.jpg" alt=""><i class="fa-solid fa-location-arrow"
+                        id="girl-1-i"></i></div>
+                <button class="top-btn"><i class="fa-solid fa-bolt"></i>CREATE FOR FAST</button>
+                <div id="log"><i class="fa-solid fa-location-arrow" id="boy-1-i"></i><img src="./photos/boy-1st.jpg"
+                        alt=""></i></div>
+            </div>
+
+            <div class="cnt">
+                <h1 class="hero-heading">One tool to <span>manage</span> contracts and your team</h1>
+                <p id="hero-para">Clause helps legal teams work fost, smarter and more efficiently, delivering the
+                    visibility and
+                    data-driven insights to mitigate risk and ensure compliance. </p>
+                <div><button id="start"> Start for Free</button>
+                    <button id="get">Get a Demo</button>
+                </div>
+            </div>
+
+            <div class="inner-2nd">
+                <div id="log"><img src="./photos/girl-2nd.jpg" alt=""><i class="fa-solid fa-location-arrow"
+                        id="girl-2-i"></i></div>
+                <div id="log"><i class="fa-solid fa-location-arrow" id="boy-2-i"></i><img src="./photos/boy-2nd.jpg"
+                        alt=""></i></div>
+            </div>
+
+            <div class="inner-3rd">
+                <p>mor than 100+ <br> companies partner</p>
+                <h2 id="hub">HubSp<i class="fa-brands fa-hubspot"></i>t</h2>
+                <h2><i class="fa-brands fa-dropbox"></i>Dropbox</h2>
+                <h2><i class="fa-brands fa-delicious"></i>Squar</h2>
+                <h2><i class="fa-brands fa-mizuni"></i>Intercon</h2>
+                <h2><i class="fa-brands fa-creative-commons-sa"></i>grammarly</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- LATEST -->
+
+
+    <section class="latest">
+        <div class="inner-latest">
+            <button class="top-2nd-btn"><i class="fa-solid fa-bolt"></i>FEATURES</button>
+            <h1 id="latest-heading"> Latest advanced technologies to ensure everything your needs</h1>
+            <p id="latest-para">
+                Maximize your team's productivity and security with our affordable, user- friendly contract management
+                system.
+            </p>
+        </div>
+
+        <!-- DYNAMIC -->
+
+        <div class="dyna">
+            <div class="dyna-1st">
+                <h6 id="dyna-heading">Dynamic dashboard</h6>
+                <p id="dyna-para">
+                    Clause helps legal teams work fost, smarter and more efficiently, delivering the visibility and
+                    data-driven insights to mitigate risk and ensure compliance.
+                </p>
+                <button id="start"> Explore all</button>
+            </div>
+
+            <div class="dyna-2nd">
+                <div class="cmea">
+                    <p>Acme Inc.</p>
+                    <div id="bar-img"><img src="./photos/boy-1st.jpg"> <img src="./photos/boy-2nd.jpg"> <img
+                            src="./photos/girl-1st.jpg"> <img src="./photos/girl-2nd.jpg"></div>
+                </div>
+                <div class="bar-chart">
+                    <ul class="chart">
+                        <li>10K</li>
+                        <li>6K</li>
+                        <li>2K</li>
+                        <li>0</li>
+                    </ul>
+                    <ul class="bars">
+                        <li>
+                            <div class="bar1" data-percentage="10"></div>
+                        </li>
+                        <li>
+                            <div class="bar2" data-percentage="20"></div>
+                        </li>
+                        <li>
+                            <div class="bar3" data-percentage="40"></div>
+                        </li>
+                        <li>
+                            <div class="bar4" data-percentage="49"></div>
+                        </li>
+                        <li>
+                            <div class="bar5" data-percentage="90"></div>
+                        </li>
+                        <li>
+                            <div class="bar6" data-percentage="72"></div>
+                        </li>
+                        <li>
+                            <div class="bar7" data-percentage="29"></div>
+                        </li>
+                        <li>
+                            <div class="bar8" data-percentage="80"></div>
+                        </li>
+                        <li>
+                            <div class="bar9" data-percentage="90"></div>
+                        </li>
+                        <li>
+                            <div class="bar10" data-percentage="29"></div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOTIFICATION -->
+
+        <div class="smart">
+            <div class="smart-1st">
+                <h1 id="smart-heading">Smart notifications</h1>
+                <p id="smart-para">Easily accessible from the notifications center, calendar or email with the relevant
+                    activities.</p>
+                <div class="smart-inner">
+                    <div id="smart-inner-1st">
+                        <p>Email notification</p><button id="sav">Save</button>
+                    </div>
+                    <div id="smart-inner-2nd">
+                        <p>New massages, conmment, or replies</p> <input type="checkbox" id="check"><label for="check"
+                            class="on-off"></label>
+                    </div>
+                    <div id="smart-inner-2nd">
+                        <p>Social emails</p> <input type="checkbox" id="chek"><label for="chek" class="on-off"></label>
+                    </div>
+                    <div id="smart-inner-2nd">
+                        <p>Annoucement and uptade</p> <input type="checkbox" id="chck"><label for="chck"
+                            class="on-off"></label>
+                    </div>
+                    <div id="smart-inner-2nd">
+                        <p>Reminders</p> <input type="checkbox" id="ceck"><label for="ceck" class="on-off"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="smart-1st">
+                <h1 id="smart-heading">Task management</h1>
+                <p id="smart-para">Discuss contract quaries, manage tasks, secure approvals, trick progress in the
+                    workspace.</p>
+                <div class="smart-inner">
+                    <div id="smart-inner-1st">
+                        <p>Activity</p><button id="sav">+ Massagr</button>
+                    </div>
+                    <div class="di">
+                        <div id="smart-inner-3rd">
+                            <div id="bil"><img src="./photos/boy-2nd.jpg">
+                                <p id="bill">Bill Senders</p>
+                            </div> <input type="checkbox" id="cheke"><label for="cheke" class="on-off"></label>
+                        </div>
+                        <p id='ragip'>Hello @Ragip Diller, could you sing the contract before the march 12? thank you in
+                            advice 😉</p>
+                    </div>
+                     <div class="di">
+                        <div id="smart-inner-3rd">
+                            <div id="bil"><img src="./photos/girl-2nd.jpg">
+                                <p id="bill">Jane Cooper</p>
+                            </div> <input type="checkbox" id="cheky"><label for="cheky" class="on-off"></label>
+                        </div>
+                        <p id='ragip'>Up loaded new contact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="replace">
+        <div class="inner-replace">
+            <button id="top-replac"><i class="fa-solid fa-bolt"></i>INTEGRATIONS</button>
+            <h1 id="replace-heading">Don't replace. Integrate.</h1>
+            <p id="replace-para">We understand the hussle of replacing the long used tools in you process. That's why we Integrate tools you use in your day-to-day work.</p>
+            <p id="all"> All Integrations <i class="fa-solid fa-bolt"></i></p>
+
+        <div class="icon-div">
+            <div id="cons"><img src="./photos/ads.png" alt=""></div>
+            <div id="cons"><img src="./photos/asana.jpg" alt=""></div>
+            <div id="cons"><img src="./photos/pipe.png" alt=""></div>
+            <div id="cons"><img src="./photos/eassistant.webp" alt=""></div>
+            <div id="cons"><img src="./photos/jira.jpg" alt=""></div>
+            <div id="cons"><img src="./photos/jot.png" alt=""></div>
+            <div id="cons"><img src="./photos/mail.png" alt=""></div>
+            <div id="cons"><img src="./photos/monday.png" alt=""></div>
+        </div>
+            <div class="icon-div">
+            <div id="cons"><img src="./photos/n.png" alt=""></div>
+            <div id="cons"><img src="./photos/click.jpg" alt=""></div>
+            <div id="cons"><img src="./photos/sheet.jpg" alt=""></div>
+            <div id="cons"><img src="./photos/shopi.png" alt=""></div>
+            <div id="cons"><img src="./photos/spot.jpg" alt=""></div>
+            <div id="cons"><img src="./photos/table.png" alt=""></div>
+            <div id="cons"><img src="./photos/zapi.png"></div>
+        </div>
+        </div>
+    </section>
+
+<!-- PARA -->
+
+
+    <section class="comaz">
+        <div class="inner-comaz">
+            <h1 id="comaz-heading">"</h1>
+            <p id="comaz-para">"Clause is helping our company to decrease operational expenses and turnaround time, 
+                while increasing the compliance, resource allocation and efectiveness of our contractor management." </p>
+
+                <div class="monkey">
+                    <img src="./photos/boy-2nd.jpg" alt="">
+                    <img src="./photos/mail.png" alt="">
+                </div>
+                <p id="dar">Darlene Robertson</p>
+                <p id="head">Head of strategy at mailchimp</p>
+        </div>
+    </section>
+
+
+    <!-- KS -->
+
+    <section class="ks">
+        <div class="three-div">
+        <div class="inner-ks">
+            <h1>2021</h1>
+            <p>Clause founded</p>
+        </div>
+                <div class="inner-ks">
+            <h1>50k+</h1>
+            <p>Active Users</p>
+        </div>
+                <div class="inner-ks">
+            <h1>1k+</h1>
+            <p>Company Partner</p>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="disco">
+        <div class="inner-disco">
+            <p id="disco-heading">Discover the full scale of <br> <span>Clause</span> capibility</p>
+
+        </div>
+         <div class="inner-disco-btn">
+               <div class="btns"> <button id="gad">Get a Demo</button>
+                <div><button id="sff"> Start for Free</button>
+                </div>
+        </div>
+        </div>
+    </section>
+
+
+      <footer>
+            <div class="footer-logo">
+                <div id="logs"><img src="./photos/logo.png" alt="">
+                    <h2 id="footer-heading">Clause</h2>
+                </div>
+                <p id="log-para"> <i class="fa-solid fa-envelope"></i> hello@clause.com 
+                    <br>
+                    <br>
+                   <i class="fa-solid fa-phone"></i> +6265428965
+                </p>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-1st-menu">
+                    <h1>Solutions</h1>
+                    <ul>
+                        <li>WhyCequrnce</li>
+                        <li>Features</li>
+                        <li>OpenAI </li>
+                        <li>Technology</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+                <div class="footer-1st-menu">
+                    <h1>Customers</h1>
+                    <ul>
+                        <li>Procurement</li>
+                        <li>Sales</li>
+                        <li>Legal</li>
+                        <li>Medium</li>
+                        <li>Enterprice</li>
+                    </ul>
+                </div>
+
+                <div class="footer-1st-menu">
+                    <h1>Resource</h1>
+                    <ul>
+                        <li>Pricing</li>
+                        <li>Contact Sale</li>
+                        <li>Changelog</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+
+            </div>
+           
+        </footer>
+        <div class="prod">
+            <h1>@Copyright 2024 clause. All rights reserved</h1>
+                            <div class="ico">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
